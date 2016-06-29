@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo $@ | socat 'unix-connect:/etc/zabbix/jabber_server/.socket' stdio
+echo $@ | socat 'unix-connect:/tmp/.socket' stdio
 
 exit 0
 
